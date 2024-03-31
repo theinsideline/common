@@ -43,12 +43,12 @@
             transition: all 0.3s ease-in-out;
 
             i {
-                animation: MoveUpDown 1s linear infinite;
+                animation: MoveLeftRight 1s linear infinite;
                 position: relative;
                 right: 0;
             }
 
-            @keyframes MoveUpDown {
+            @keyframes MoveLeftRight {
                 0%,
                 100% {
                     right: 0;
