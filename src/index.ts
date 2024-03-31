@@ -1,3 +1,3 @@
-import LinkButton from "./components/ui/link-button.vue";
+import LinkButton from './components/ui/link-button.vue'
 
-export { LinkButton };
+export { LinkButton }
