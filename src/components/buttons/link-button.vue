@@ -14,11 +14,7 @@
 </script>
 
 <template>
-    <a
-        class="link-button"
-        :href="link"
-        >{{ text }} <i>--></i></a
-    >
+    <a class="link-button" :href="link">{{ text }} <i>--></i></a>
 </template>
 
 <style lang="scss">
