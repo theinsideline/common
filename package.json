@@ -1,22 +1,48 @@
 {
   "name": "common",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist",
+    "src/components/ui",
+    "src/assets/scss"
+  ],
+  "main": "./dist/common.umd.cjs",
+  "module": "/dist/common.js",
+  "exports": {
+    ".": {
+      "import": "./dist/common.js",
+      "require": "./dist/common.umd.cjs"
+    },
+    "./style.css": "./dist/style.css",
+    "./scss/main.scss": "./src/assets/scss/main.scss"
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "format": "prettier ./src --write"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preserve": "vite build",
+    "serve": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview",
+    "test": "exit 0",
+    "prebuild": "prettier ./src --write"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@vue/cli-plugin-typescript": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "path": "^0.12.7",
+    "prettier": "^3.2.5",
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "vite": "^5.2.7",
+    "vite-plugin-css-injected-by-js": "^3.5.0",
+    "vite-plugin-dts": "^3.8.1",
+    "vue-tsc": "^2.0.7"
   }
 }

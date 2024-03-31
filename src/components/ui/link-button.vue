@@ -17,7 +17,7 @@ defineProps({
   <a class="link-button" :href="link">{{ text }} <i>--></i></a>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
 
