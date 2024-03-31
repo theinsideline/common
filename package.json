@@ -46,6 +46,6 @@
     "vue-tsc": "^2.0.7"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@theinsideline"
+    "@theinsideline:registry": "https://npm.pkg.github.com"
   }
 }
