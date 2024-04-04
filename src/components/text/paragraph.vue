@@ -11,7 +11,8 @@
 
 <template>
     <div class="paragraph">
-        <span v-text="text" />
+        <span v-if="text" v-text="text" />
+        <span v-else><slot /></span>
     </div>
 </template>
 
