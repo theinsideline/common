@@ -11,7 +11,7 @@
 
 <template>
     <div class="heading_2">
-        <h2 v-text="text" />
+        <h2 class="heading" v-text="text" />
     </div>
 </template>
 

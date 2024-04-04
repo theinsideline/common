@@ -1,10 +1,12 @@
-$h2_font_size: 40px;
-$h2_font_size_title: 55px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
 
-$h2_font_size_tablet_title: 34px;
+$h1_font_size: 70px;
+$h1_font_size_tablet: 46px;
+$h1_font_size_mobile: 34px;
 
-$h2_font_size_mobile: 22px;
-$h2_font_size_mobile_title: 28px;
+$h2_font_size: 55px;
+$h2_font_size_tablet: 34px;
+$h2_font_size_mobile: 28px;
 
 $h3_font_size: 40px;
 $h3_font_size_mobile: 22px;
@@ -15,6 +17,8 @@ $span_font_size_mobile: 16px;
 
 $link_button_font_size: 22px;
 $link_button_font_size_mobile: 16px;
+
+
 
 // @font-face {
 //   font-family: Inter;

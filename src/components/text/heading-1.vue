@@ -10,8 +10,8 @@
 </script>
 
 <template>
-    <div class="heading_3">
-        <h3 class="heading" v-text="text" />
+    <div class="heading_1">
+        <h1 class="heading" v-text="text" />
     </div>
 </template>
 
