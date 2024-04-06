@@ -10,11 +10,15 @@
             type: String,
             default: '',
         },
+        color: {
+            type: String,
+            default: '#161616',
+        },
     })
 </script>
 
 <template>
-    <a class="link-button" :href="link">{{ text }} <i>--></i></a>
+    <a class="link-button" :href="link" :style="`background: ${color};`">{{ text }} <i>--></i></a>
 </template>
 
 <style lang="scss">
@@ -25,7 +29,6 @@
         cursor: pointer;
         text-decoration: none;
         color: white;
-        background: black;
         text-align: center;
         width: 100%;
         max-width: 350px;
